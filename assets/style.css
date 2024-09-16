@@ -1,0 +1,125 @@
+*{
+    background-color: darkgray;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+:root{
+    --color1: #4ab9f5
+}
+
+
+header{
+    text-align: center;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    width: 100%;
+    justify-items: center;  
+    height: auto;
+    padding: 10px 0 10px 0;
+
+}
+    
+
+.boxes {
+    position: relative;    
+    margin: 30px 5px 0px 5px;
+    width: 600px;       
+    height: auto;    
+    border: 2px dashed black;
+    transition: all 0.2s ease-in-out;
+}
+
+.box-titles{
+    background-color: var(--color1);
+    position: relative;
+    bottom: 30px;
+    width: 300px;
+    left: 20%;
+    text-align: center;
+    border: 2px solid  black;
+}
+h2{
+    user-select: none;
+    background-color: var(--color1);
+}
+
+.text-boxes{
+    margin: 0 5% 0 5%;
+}
+
+.code-boxes{    
+    margin: 0 5% 20px 5%;
+    align-content: center;
+}
+
+p{
+    user-select: none;
+}
+
+pre{
+    font-family: monospace;
+    background-color: rgb(28, 28, 28);
+    border-radius: 10px;
+    color: rgb(234, 234, 234);
+    position: relative;
+}
+    
+footer{
+    text-align: center;
+}
+
+.boxes:hover {
+    box-shadow: inset 0px 0px 8px
+    rgb(255, 255, 255), 0 0 15px
+    rgb(255, 255, 255);
+    border: 2px solid white;        
+}
+
+
+.boxes:active {  
+    user-select: all;  
+    
+}
+
+@media screen and (max-width: 1869px) {
+    main{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .box-titles {
+        background-color: gray
+    }
+    h2{
+        background-color: gray;
+        color: var(--color1);
+    }
+
+}
+
+@media screen and (max-width: 1243px) {
+    main{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .box-titles {
+        background-color: darkcyan;
+    }
+    h2{
+        background-color: darkcyan;
+        color: white;
+    }
+}
+
+    
+
+  
+ 
+            
+
+   
+  
+        
+                    
+    
+  
+           
